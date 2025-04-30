@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import TodoApp from './components/TodoApp.jsx';
+import QuizApp from './components/QuizApp.jsx';
 
 function App() {
     const [users, setUsers] = useState([]);
@@ -26,6 +27,7 @@ function App() {
             </ul>
 
             <TodoApp />
+            <QuizApp />
         </div>
     );
 }
