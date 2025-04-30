@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import TodoApp from './components/TodoApp.jsx';
 
 function App() {
     const [users, setUsers] = useState([]);
@@ -23,6 +24,8 @@ function App() {
                     <li key={user.id}>{user.name} - {user.email}</li>
                 ))}
             </ul>
+
+            <TodoApp />
         </div>
     );
 }
